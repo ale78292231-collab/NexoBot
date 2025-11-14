@@ -49,7 +49,7 @@ let namechannel = '𝐒𝐚𝐤𝐮𝐧𝐚 𝐁𝐨𝐭 𝐂𝐡a͟𝐧n͟e͟�
 let moneda = "yenes";
 
 //• ↳ ◜𝑳𝑰𝑵𝑲𝑺 𝑫𝑬 𝑺𝑨𝑲𝑲𝑼𝑵𝑨 𝑩𝑶𝑻 𝑪𝑳𝑼𝑩◞ • ❄️
-let gp1 = "https:                                                                     
+let gp1 = "https://chat.whatsapp.com/ERStkGrcc3x9pScCAwi1rG?mode=wwt";                                                                     
 let comunidad = "//chat.whatsapp.com/ERStkGrcc3x9pScCAwi1rG?mode=wwt"; //Grupo oficial
 let comunidad = "https://chat.whatsapp.com/Gcp9AYJiSb56bNolg63KvD";
 let channel = "https:                                                                 
