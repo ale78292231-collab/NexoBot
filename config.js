@@ -18,7 +18,7 @@ let owner_lid = [
   ['156852826419431', '💫 𝗖𝗿𝗲𝗮𝗱𝗼𝗿 🌐 (LID)', true],
   ['250135271469135', 'carlos.rv(LID)', true]
 ];
-let mods = [ ];
+let mods = [];
 let suittag = ['50378630152', '51900922660'];
 let prems = [];
 
