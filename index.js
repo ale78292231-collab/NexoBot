@@ -1,4 +1,3 @@
-// Corrección principal: Se definen las variables global.sessions y global.jadi
 process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = '1'
 import './config.js'
 import { setupMaster, fork } from 'cluster'
@@ -73,6 +72,16 @@ loadDatabase()
 // Aseguramos que la carpeta sessions exista antes de usar Baileys
 if (!existsSync(join(__dirname, global.sessions))) { mkdirSync(join(__dirname, global.sessions), { recursive: true }) }
 
+// Función isValidPhoneNumber
+async function isValidPhoneNumber(phoneNumber) {
+  try {
+    const number = phoneUtil.parse(phoneNumber);
+    return phoneUtil.isValidNumber(number);
+  } catch (error) {
+    return false;
+  }
+}
+
 // Solución principal: el path SIEMPRE será string definido
 const {state, saveState, saveCreds} = await useMultiFileAuthState(join(__dirname, global.sessions))
 const msgRetryCounterMap = (MessageRetryMap) => { };
@@ -145,11 +154,4 @@ if (!fs.existsSync(join(__dirname, global.sessions, 'creds.json'))) {
         setTimeout(async () => {
           let codeBot = await conn.requestPairingCode(addNumber)
           codeBot = codeBot?.match(/.{1,4}/g)?.join("-") || codeBot
-          console.log(chalk.bold.white(chalk.bgMagenta(`💎 CÓDIGO DE VINCULACIÓN 💎`)), chalk.bold.white(chalk.white(codeBot)))
-        }, 3000)
-      }
-    }
-  }
-}
-
-// Función isValidPhoneNumber
+          console.log(chalk.bold.white(chalk.bgMagenta(`💎 CÓDIGO DE VINCULACIÓN
