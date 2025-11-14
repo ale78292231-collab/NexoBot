@@ -1,6 +1,6 @@
-import {watchFile, unwatchFile} from 'fs';
+import { watchFile, unwatchFile } from 'fs';
 import chalk from 'chalk';
-import {fileURLToPath} from 'url';
+import { fileURLToPath } from 'url';
 import fs from 'fs';
 import cheerio from 'cheerio';
 import fetch from 'node-fetch';
@@ -84,13 +84,6 @@ let ch = {
   ch1: '120363422395892347@newsletter',
 };
 let multiplier = 70;
-
-//*─ׄ─ׅ─ׄ─✰─ׄ─ׅ─ׄ─✰─ׄ─ׅ─ׄ─✰─ׄ─ׅ─ׄ─✰─ׄ─ׅ─ׄ─✰─ׄ─ׅ─ׄ─*
-let cheerio = cheerio;
-let fs = fs;
-let fetch = fetch;
-let axios = axios;
-let moment = moment;
 
 //*─ׄ─ׅ─ׄ─✰─ׄ─ׅ─ׄ─✰─ׄ─ׅ─ׄ─✰─ׄ─ׅ─ׄ─✰─ׄ─ׅ─ׄ─✰─ׄ─ׅ─ׄ─*
 let file = fileURLToPath(import.meta.url);
