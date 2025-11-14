@@ -8,28 +8,28 @@ import axios from 'axios';
 import moment from 'moment-timezone';
 
 //*─ׄ─ׅ─ׄ─✰─ׄ─ׅ─ׄ─✰─ׄ─ׅ─ׄ─✰─ׄ─ׅ─ׄ─✰─ׄ─ׅ─ׄ─✰─ׄ─ׅ─ׄ─*
-let botNumber = ''; //Ejemplo: 525218138672
+let botNumber = ""; //Ejemplo: 525218138672
 let owner = [
-  ['50378630152', '💫 𝗖𝗿𝗲𝗮𝗱𝗼𝗿 🌐', true],
-  ['51900922660', 'Carlos.rv', true],
-  ['50378630152', 'Alex', true]
+  ["50378630152", "💫 𝗖𝗿𝗲𝗮𝗱𝗼𝗿 🌐", true],
+  ["51900922660", "Carlos.rv", true],
+  ["50378630152", "Alex", true]
 ];
 let owner_lid = [
-  ['156852826419431', '💫 𝗖𝗿𝗲𝗮𝗱𝗼𝗿 🌐 (LID)', true],
-  ['250135271469135', 'carlos.rv(LID)', true]
+  ["156852826419431", "💫 𝗖𝗿𝗲𝗮𝗱𝗼𝗿 🌐 (LID)", true],
+  ["250135271469135", "carlos.rv(LID)", true]
 ];
 let mods = [];
-let suittag = ['50378630152', '51900922660'];
+let suittag = ["50378630152", "51900922660"];
 let prems = [];
 
 //*─ׄ─ׅ─ׄ─✰─ׄ─ׅ─ׄ─✰─ׄ─ׅ─ׄ─✰─ׄ─ׅ─ׄ─✰─ׄ─ׅ─ׄ─✰─ׄ─ׅ─ׄ─*
-let libreria = 'Baileys';
-let baileys = 'V 6.7.8';
-let vs = '2.0.0';
-let languaje = 'Español';
-let nameqr = 'M500-ULTRA-BOT';
-let sessions = 'Session';
-let jadi = 'JadiBot';
+let libreria = "Baileys";
+let baileys = "V 6.7.8";
+let vs = "2.0.0";
+let languaje = "Español";
+let nameqr = "M500-ULTRA-BOT";
+let sessions = "Session";
+let jadi = "JadiBot";
 let makiJadibts = true;
 
 //*─ׄ─ׅ─ׄ─✰─ׄ─ׅ─ׄ─✰─ׄ─ׅ─ׄ─✰─ׄ─ׅ─ׄ─✰─ׄ─ׅ─ׄ─✰─ׄ─ׅ─ׄ─*
@@ -46,19 +46,19 @@ let gt = '͟͞𝚂𝙰𝙺𝚄𝙽𝙰;';
 let namechannel = '𝐒𝐚𝐤𝐮𝐧𝐚 𝐁𝐨𝐭 𝐂𝐡a͟𝐧n͟e͟𝐥𑁯';
 
 //*─ׄ─ׅ─ׄ─✰─ׄ─ׅ─ׄ─✰─ׄ─ׅ─ׄ─✰─ׄ─ׅ─ׄ─✰─ׄ─ׅ─ׄ─✰─ׄ─ׅ─ׄ─*
-let moneda = 'yenes';
+let moneda = "yenes";
 
-//• ↳ ◜𝑳𝑰𝑵𝑲𝑺 𝑫𝑬 𝑺𝑨𝑲𝑼𝑵𝑨 𝑩𝑶𝑻 𝑪𝑳𝑼𝑩◞ • ❄️
-let gp1 = 'https:                                                                     
-let comunidad = '//chat.whatsapp.com/ERStkGrcc3x9pScCAwi1rG?mode=wwt'; //Grupo oficial
-let comunidad = 'https://chat.whatsapp.com/Gcp9AYJiSb56bNolg63KvD';
-let channel = 'https:                                                                 
-let yt = '//whatsapp.com/channel/0029VbBhpX5A89MqEHNYTd2V'; //Canal Oficial
-let yt = 'https://youtube.com/channel/UCfqn5r8zG5uI8H3a3lsfLCQ?si=3Y-HBolPNOgmFeoA'; //Canal De Youtube
-let md = 'https:                                                              
-let correo = '//github.com/ale78292231-collab/NexoBot.git'; //Github Oficial
-let correo = 'wazaponni@gmail.com';
-let cn = 'https://whatsapp.com/channel/0029VbBhpX5A89MqEHNYTd2V';
+//• ↳ ◜𝑳𝑰𝑵𝑲𝑺 𝑫𝑬 𝑺𝑨𝑲𝑲𝑼𝑵𝑨 𝑩𝑶𝑻 𝑪𝑳𝑼𝑩◞ • ❄️
+let gp1 = "https:                                                                     
+let comunidad = "//chat.whatsapp.com/ERStkGrcc3x9pScCAwi1rG?mode=wwt"; //Grupo oficial
+let comunidad = "https://chat.whatsapp.com/Gcp9AYJiSb56bNolg63KvD";
+let channel = "https:                                                                 
+let yt = "//whatsapp.com/channel/0029VbBhpX5A89MqEHNYTd2V"; //Canal Oficial
+let yt = "https://youtube.com/channel/UCfqn5r8zG5uI8H3a3lsfLCQ?si=3Y-HBolPNOgmFeoA"; //Canal De Youtube
+let md = "https:                                                              
+let correo = "//github.com/ale78292231-collab/NexoBot.git"; //Github Oficial
+let correo = "wazaponni@gmail.com";
+let cn = "https://whatsapp.com/channel/0029VbBhpX5A89MqEHNYTd2V";
 
 //*─ׄ─ׅ─ׄ─✰─ׄ─ׅ─ׄ─✰─ׄ─ׅ─ׄ─✰─ׄ─ׅ─ׄ─✰─ׄ─ׅ─ׄ─✰─ׄ─ׅ─ׄ─*
 let catalogo = fs.readFileSync('./src/catalogo.jpg');
