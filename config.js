@@ -52,11 +52,9 @@ let moneda = "yenes";
 let gp1 = "https://chat.whatsapp.com/ERStkGrcc3x9pScCAwi1rG?mode=wwt";                                                                     
 let comunidad = "//chat.whatsapp.com/ERStkGrcc3x9pScCAwi1rG?mode=wwt"; //Grupo oficial
 let comunidad = "https://chat.whatsapp.com/Gcp9AYJiSb56bNolg63KvD";
-let channel = "https:                                                                 
-let yt = "//whatsapp.com/channel/0029VbBhpX5A89MqEHNYTd2V"; //Canal Oficial
+let channel = "https://whatsapp.com/channel/0029VbBhpX5A89MqEHNYTd2V"; //Canal Oficial                                                                 
 let yt = "https://youtube.com/channel/UCfqn5r8zG5uI8H3a3lsfLCQ?si=3Y-HBolPNOgmFeoA"; //Canal De Youtube
-let md = "https:                                                              
-let correo = "//github.com/ale78292231-collab/NexoBot.git"; //Github Oficial
+let md = "https://github.com/ale78292231-collab/NexoBot.git"; //Github Oficial                                                              
 let correo = "wazaponni@gmail.com";
 let cn = "https://whatsapp.com/channel/0029VbBhpX5A89MqEHNYTd2V";
 
