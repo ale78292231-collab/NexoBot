@@ -81,6 +81,7 @@ settings: {},
 global.db.chain = chain(global.db.data);
 };
 loadDatabase(); 
+global.sessions = 'sessions';
 
 const {state, saveState, saveCreds} = await useMultiFileAuthState(global.sessions)
 const msgRetryCounterMap = new Map()
