@@ -7,6 +7,7 @@ import {unwatchFile, watchFile} from 'fs';
 import fs from 'fs';
 import chalk from 'chalk';
 import ws from 'ws';
+const { owner, owner_lid, mods, suittag, prems } = require('./settings.js');
 
 
 const { proto } = (await import('@whiskeysockets/baileys')).default
