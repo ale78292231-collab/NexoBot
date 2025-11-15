@@ -1,3 +1,4 @@
+console.log('Handler ejecutado');
 import {generateWAMessageFromContent} from '@whiskeysockets/baileys';
 import {smsg} from './lib/simple.js';
 import {format} from 'util';
@@ -231,6 +232,7 @@ console.error(e)
 let _user = global.db.data && global.db.data.users && global.db.data.users[m.sender]
 
 const isROwner = [conn.decodeJid(global.conn.user.id), ...owner.map(([number]) => number.replace(/[^0-9]/g, '') + '@s.whatsapp.net')].includes(m.sender.replace(/[^0-9]/g, '') + '@s.whatsapp.net');
+console.log('Mensaje recibido:', chatUpdate);
 const isOwner = isROwner || m.fromMe
 if (!mods) {
   mods = [];
