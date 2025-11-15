@@ -9,19 +9,20 @@ import moment from 'moment-timezone';
 
 //*─ׄ─ׅ─ׄ─✰─ׄ─ׅ─ׄ─✰─ׄ─ׅ─ׄ─✰─ׄ─ׅ─ׄ─✰─ׄ─ׅ─ׄ─✰─ׄ─ׅ─ׄ─*
 let botNumber = ""; //Ejemplo: 525218138672
-global.owner = [
+export const owner = [
   ["50378630152", "💫 𝗖𝗿𝗲𝗮𝗱𝗼𝗿 🌐", true],
   ["51900922660", "Carlos.rv", true],
   ["50378630152", "Alex", true]
 ];
-let owner_lid = [
+
+export const owner_lid = [
   ["156852826419431", "💫 𝗖𝗿𝗲𝗮𝗱𝗼𝗿 🌐 (LID)", true],
   ["250135271469135", "carlos.rv(LID)", true]
 ];
-let mods = [];
-let suittag = ["50378630152", "51900922660"];
-let prems = [];
 
+export const mods = [];
+export const suittag = ["50378630152", "51900922660"];
+export const prems = [];
 //*─ׄ─ׅ─ׄ─✰─ׄ─ׅ─ׄ─✰─ׄ─ׅ─ׄ─✰─ׄ─ׅ─ׄ─✰─ׄ─ׅ─ׄ─✰─ׄ─ׅ─ׄ─*
 let libreria = "Baileys";
 let baileys = "V 6.7.8";
