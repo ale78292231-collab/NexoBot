@@ -230,7 +230,7 @@ console.error(e)
 
 let _user = global.db.data && global.db.data.users && global.db.data.users[m.sender]
 
-const isROwner = [conn.decodeJid(global.conn.user.id), ...global.owner.map((number) => number.replace(/[^0-9]/g, '') + '@s.whatsapp.net')].includes(m.sender.replace(/[^0-9]/g, '') + '@s.whatsapp.net');
+const isROwner = [conn.decodeJid(global.conn.user.id), ...owner.map(([number]) => number.replace(/[^0-9]/g, '') + '@s.whatsapp.net')].includes(m.sender.replace(/[^0-9]/g, '') + '@s.whatsapp.net');
 const isOwner = isROwner || m.fromMe
 const isMods = isROwner || global.mods.map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender)
 const isPrems = isROwner || global.prems.map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender) || _user.premium == true
